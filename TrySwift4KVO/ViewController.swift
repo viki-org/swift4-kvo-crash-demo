@@ -72,6 +72,7 @@ class ViewController: UIViewController {
   }()
 
   @objc func didTapButton(_ button: UIButton) {
+    print("--- Tapped \(button.title(for: .normal) ?? "-") ---")
     kidGroup = KidGroup()
     kidGroup?.kid1 = Kid(name: "A kid", age: 3)
     kidGroup?.setupObservation()
